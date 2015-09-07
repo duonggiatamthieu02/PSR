@@ -1,8 +1,8 @@
 PSR-0 Autoloading standard
 ==========================
-_Kể từ 2014-10-21 PSR-0 bị phản đối, PSR-4 đang được khuyến nghị như thay thế_
+_Kể từ 2014-10-21 `[PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.md)` bị phản đối, `[PSR-4](https://github.com/gr-hien/PSR/blob/master/PSR-0.md)` đang được khuyến nghị như thay thế_
 
-*** Bắt buộc
+### Bắt buộc
 - Một namespace đầy đủ phải theo cấu trúc `\<Vendor Name>\(<Namespace>\)*<Class Name>`
 - Mỗi namespace phải có một top-level ("Vendor Name")
 - Mỗi namespace có thể có nhiều sub-namespace
@@ -11,17 +11,17 @@ _Kể từ 2014-10-21 PSR-0 bị phản đối, PSR-4 đang được khuyến ng
 - Namespace đầy đủ và class là hậu tố với `.php` khi load lên
 - Chữ cái trong `vendor name`, `namespaces` và `class names` có thể là sự kết hợp của chữ viết thường và viết hoa
 
-*** Ví dụ
+### Ví dụ
 - `\Doctrine\Common\IsolatedClassLoader` => `/path/to/project/lib/vendor/Doctrine/Common/IsolatedClassLoader.php`
 - `\Symfony\Core\Request` => `/path/to/project/lib/vendor/Symfony/Core/Request.php`
 - `\Zend\Acl` => `/path/to/project/lib/vendor/Zend/Acl.php`
 - `\Zend\Mail\Message` => `/path/to/project/lib/vendor/Zend/Mail/Message.php`
 
-*** Dấu gạch chân trong namespace và class name
+### Dấu gạch chân trong namespace và class name
 - `\namespace\package\Class_Name` => `/path/to/project/lib/vendor/namespace/package/Class/Name.php`
 - `\namespace\package_name\Class_Name` => `/path/to/project/lib/vendor/namespace/package_name/Class/Name.php`
 
-*** Ví dụ thực hiện
+### Ví dụ thực hiện
 Bên dưới là một ví dụ đơn giản về autoloading:
 
     <?php
@@ -42,4 +42,4 @@ Bên dưới là một ví dụ đơn giản về autoloading:
     }
     spl_autoload_register('autoload');
 
-*** [SplClassLoader](http://gist.github.com/221634)
+### [SplClassLoader](http://gist.github.com/221634)
