@@ -1,6 +1,6 @@
 PSR-0 Autoloading standard
 ==========================
-_Kể từ 2014-10-21 `[PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.md)` bị phản đối, `[PSR-4](https://github.com/gr-hien/PSR/blob/master/PSR-0.md)` đang được khuyến nghị như thay thế_
+_Kể từ 2014-10-21 [PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) bị phản đối, [PSR-4](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) đang được khuyến nghị như thay thế_
 
 ### Bắt buộc
 - Một namespace đầy đủ phải theo cấu trúc `\<Vendor Name>\(<Namespace>\)*<Class Name>`
@@ -23,23 +23,23 @@ _Kể từ 2014-10-21 `[PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.
 
 ### Ví dụ thực hiện
 Bên dưới là một ví dụ đơn giản về autoloading:
+```php
+<?php
 
-    <?php
-    
-    function autoload($className)
-    {
-        $className = ltrim($className, '\\');
-        $fileName  = '';
-        $namespace = '';
-        if ($lastNsPos = strrpos($className, '\\')) {
-            $namespace = substr($className, 0, $lastNsPos);
-            $className = substr($className, $lastNsPos + 1);
-            $fileName  = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
-        }
-        $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+function autoload($className)
+{
+	$className = ltrim($className, '\\');
+	$fileName  = '';
+	$namespace = '';
+	if ($lastNsPos = strrpos($className, '\\')) {
+		$namespace = substr($className, 0, $lastNsPos);
+		$className = substr($className, $lastNsPos + 1);
+		$fileName  = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
+	}
+	$fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
 
-        require $fileName;
-    }
-    spl_autoload_register('autoload');
-
+	require $fileName;
+}
+spl_autoload_register('autoload');
+```
 ### [SplClassLoader](http://gist.github.com/221634)
