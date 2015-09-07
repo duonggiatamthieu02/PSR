@@ -1,6 +1,6 @@
 PSR-0 Autoloading standard
 ==========================
-_Kể từ 2014-10-21 [PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) bị phản đối, [PSR-4](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) đang được khuyến nghị như thay thế_
+_Kể từ 2014-10-21 [PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) bị phản đối (~~deprecated~~), [PSR-4](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) đang được khuyến nghị như thay thế._
 
 ### Bắt buộc
 - Một namespace đầy đủ phải theo cấu trúc `\<Vendor Name>\(<Namespace>\)*<Class Name>`
