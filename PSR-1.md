@@ -3,7 +3,7 @@ PSR-1 Basic Coding Standard
 Những tiêu chuẩn của phần này bao gồm những gì được coi là chuẩn code.
 Việc này đảm bảo một mức độ cao về khả năng tương tác của code PHP được chia sẻ.
 
-### 1. Tổng quan
+### 1. Overview
 * Files phải sử dụng thẻ `<?php` và `<?=`
 * Files phải dùng *UTF-8 without BOM* cho code PHP
 * Files chỉ nên khai báo các biểu tượng (như Class, Function, Constant, ...), hoặc để làm các việc phụ (như xuất ra màn hình, cấu hình, ...). Nhưng không được làm một lúc cả 2 việc.
