@@ -1,5 +1,5 @@
-PSR
-===
+PSR (PHP Standard Recommendation)
+=================================
 - [PSR-0 Autoloading Standard](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-0.md)
 - [PSR-1 Basic Coding Standard](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-1.md)
 - [PSR-2 Coding Style Guide](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-2.md)
