@@ -6,7 +6,7 @@ Mục đích chính là tối thiểu sự phức tạp khi lướt qua code c�
 
 Quy tắc ở đây được bắt nguồn từ sự tương đồng của nhiều thành viên trong dự án. Khi nhiều tác giả cùng hợp tác trên nhiều dự án, nó sẽ giúp bạn có một tập hợp các nguyên tắc.
 
-### 1. Tổng quan
+### 1. Overview
 * Code phải tuân thủ [PSR-1](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-1.md)
 * Code phải sử dụng 4 whitespaces cho thụt dòng, không sử dụng tab.
 * Không phải là một giới hạn cứng về chiều dài của dòng; giới hạn mềm phải là 120 ký tự; dòng phải là 80 ký tự hoặc ít hơn.
