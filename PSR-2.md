@@ -59,14 +59,14 @@ Tag đóng `?>` phải được bỏ qua ở tất cả những file chỉ chứ
 #### 2.3 Lines
 Không phải là một giới hạn cứng về chiều dài của dòng.
 
-Giới hạn mềm chiều dài của dòng là 120 ký tự 
+Giới hạn mềm chiều dài của dòng là 120 ký tự.
 
 #### 2.4 Indenting
 Code phải sử dụng thụt dòng 4 spaces, không được sử dụng tab.
 
 #### 2.5 Keywords and True/False/Null
 [Keywords](http://php.net/manual/en/reserved.keywords.php) của PHP phải viết thường.
-Các hằng số PHP như `true`, `false, `null` cũng cần phải viết thường.
+Các hằng số PHP như `true`, `false`, `null` cũng cần phải viết thường.
 
 ### 3. Namespace and Use Declarations
 Phải có một dòng trống phía sau khởi báo `namespace`.
