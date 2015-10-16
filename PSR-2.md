@@ -17,7 +17,7 @@ Quy tắc ở đây được bắt nguồn từ sự tương đồng của nhi�
 * Mở ngoặc nhọn của cấu trúc điều khiển phải nằm cùng trong một dòng, và đóng ngoặc nhọn tại dòng cuối phía sau nội dung.
 * Mở dấu ngoặc đơn cho cấu trúc điều khiển không được có một whitespace phía sau, và trước đóng ngoặc đơn cũng vậy.
 
-#### 1.1 Ví dụ
+#### 1.1 Example
 Ví dụ này sẽ cho chúng ta một cái nhìn tổng quát về các quy ước:
 ```php
 <?php
