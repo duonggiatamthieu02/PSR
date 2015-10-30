@@ -247,11 +247,11 @@ $foo->bar(
 ```
 
 ### 5. Control Structures
-* **Phải** có một whitespace phía sau từ khóa cấu trúc điều khiển
-* **Không được** có whitespace nào trước và sau đóng mở ngoặc đơn
-* **Phải** có một whitespace ở giữa đóng ngoặc đơn và mở ngoặc nhọn
-* Thân nội dung **phải** thụt vào một lần
-* Đóng ngoặc nhọn **phải** nằm ở dòng kế tiếp nội dung
+* **Phải** có một whitespace phía sau từ khóa cấu trúc điều khiển.
+* **Không được** có whitespace nào trước và sau đóng mở ngoặc đơn.
+* **Phải** có một whitespace ở giữa đóng ngoặc đơn và mở ngoặc nhọn.
+* Thân nội dung **phải** thụt vào một lần.
+* Đóng ngoặc nhọn **phải** nằm ở dòng kế tiếp nội dung.
 
 #### 5.1 `if`, `elseif`, `else`
 ```php

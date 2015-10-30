@@ -4,13 +4,13 @@ Những tiêu chuẩn của phần này bao gồm những gì được coi là c
 Việc này đảm bảo một mức độ cao về khả năng tương tác của code PHP được chia sẻ.
 
 ### 1. Overview
-* Files **phải** sử dụng thẻ `<?php` và `<?=`
-* Files **phải** dùng *UTF-8 without BOM* cho code PHP
+* Files **phải** sử dụng thẻ `<?php` và `<?=`.
+* Files **phải** dùng *UTF-8 without BOM* cho code PHP.
 * Files chỉ **nên** khai báo các biểu tượng (như Class, Function, Constant, ...), hoặc để làm các việc phụ (như xuất ra màn hình, cấu hình, ...). Nhưng không được làm một lúc cả 2 việc.
-* Namespaces và các class **phải** tuân theo `autoloading` PSR: [[PSR-0](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-0.md),[PSR-4](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-4.md)]
-* Tên class **phải** khai báo theo kiểu `StudlyCaps`
-* Tên constant **phải** khai báo tất cả viết hoa và ngăn cách bằng dấu gạch dưới
-* Tên method (function) **phải** khai báo theo kiểu`camelCase`
+* Namespaces và các class **phải** tuân theo `autoloading` PSR: [[PSR-0](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-0.md),[PSR-4](https://github.com/runsystem-hiennt2/PSR/blob/master/PSR-4.md)].
+* Tên class **phải** khai báo theo kiểu `StudlyCaps`.
+* Tên constant **phải** khai báo tất cả viết hoa và ngăn cách bằng dấu gạch dưới.
+* Tên method (function) **phải** khai báo theo kiểu`camelCase`.
 
 ### 2. Files
 #### 2.1 PHP tags

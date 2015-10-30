@@ -3,13 +3,13 @@ PSR-0 Autoloading standard
 _Kể từ 2014-10-21 [PSR-0](https://github.com/gr-hien/PSR/blob/master/PSR-0.md) bị phản đối (~~deprecated~~), [PSR-4](https://github.com/gr-hien/PSR/blob/master/PSR-4.md) đang được khuyến nghị như thay thế._
 
 ### Mandatory
-* Một namespace đầy đủ **phải** tuân theo cấu trúc `\<Vendor Name>\(<Namespace>\)*<Class Name>`
-* Mỗi namespace **phải** có một top-level ("Vendor Name")
-* Mỗi namespace **có thể** có nhiều sub-namespace
-* Mỗi phân cách namespace được chuyển sang `DIRECTORY_SEPARATOR` khi load lên
-* mỗi ký tự `_` trong CLASS NAME chuyển qua `DIRECTORY_SEPARATOR`. Ký tự `_` không có ý nghĩa đặc biệt trong namespace
-* Namespace đầy đủ và class là hậu tố với `.php` khi load lên
-* Chữ cái trong `vendor name`, `namespaces` và `class names` **có thể** là sự kết hợp của chữ viết thường và viết hoa
+* Một namespace đầy đủ **phải** tuân theo cấu trúc `\<Vendor Name>\(<Namespace>\)*<Class Name>`.
+* Mỗi namespace **phải** có một top-level ("Vendor Name").
+* Mỗi namespace **có thể** có nhiều sub-namespace.
+* Mỗi phân cách namespace được chuyển sang `DIRECTORY_SEPARATOR` khi load lên.
+* mỗi ký tự `_` trong CLASS NAME chuyển qua `DIRECTORY_SEPARATOR`. Ký tự `_` không có ý nghĩa đặc biệt trong namespace.
+* Namespace đầy đủ và class là hậu tố với `.php` khi load lên.
+* Chữ cái trong `vendor name`, `namespaces` và `class names` **có thể** là sự kết hợp của chữ viết thường và viết hoa.
 
 ### Examples
 * `\Doctrine\Common\IsolatedClassLoader` => `/path/to/project/lib/vendor/Doctrine/Common/IsolatedClassLoader.php`

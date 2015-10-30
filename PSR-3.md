@@ -11,7 +11,7 @@ Mục đích chính là cho phép thư viện nhận một đối tượng `Psr\
   * **alert**: hành động phải giải quyết ngay lập tức: sập trang web, database không sẵn sàng. 
   * **critical**: điều kiện quan trọng: thành phần của ứng dụng không sẵn sàng, lỗi bất ngờ.
   * **error**: lỗi trong quá trình chạy, không đòi phải giải quyết ngay lập tức, nhưng nên ghi lại và theo dõi.
-  * **warning**: những exception xảy ra nhưng không phải lỗi: những cảnh báo về sử dụng
+  * **warning**: những exception xảy ra nhưng không phải lỗi: những cảnh báo về sử dụng.
   * **notice**: những việc bình thường nhưng có ý nghĩa.
   * **info**: những sự việc đáng quan tâm: user đăng nhập, log của SQL.
   * **debug**: những thông tin debug.
