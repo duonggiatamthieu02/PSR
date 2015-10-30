@@ -85,11 +85,11 @@ class Foo
 
 Tuy nhiên, code viết cho PHP 5.2 và trở về trước **nên** sử dụng quy ước giả của với tiền tố là `Vendor_` ở tên class:
 ```php
-<? php 
-// PHP 5.2.x và trước đó: 
-class  Vendor_Model_Foo 
-
-{}
+<?php
+// PHP 5.2.x and earlier:
+class Vendor_Model_Foo
+{
+}
 ```
 
 ### 4. Class Constants, Properties, and Methods
