@@ -10,3 +10,4 @@ PSR (PHP Standard Recommendation)
 ### Related library
 * **SplClassLoader**: [https://gist.github.com/jwage/221634](https://gist.github.com/jwage/221634)
 * **php-fig/log**: [https://github.com/php-fig/log](https://github.com/php-fig/log)
+* **Example Implementations of PSR-4**: [https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md)
