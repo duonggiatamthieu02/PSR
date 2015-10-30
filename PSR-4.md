@@ -10,9 +10,9 @@ PSR này cũng mô tả nơi đặt những file mà có thể tự động load
 1. Định nghĩa `class` đề cập đến các Class, Interface, Trait và các cấu trúc tương tự khác.
 2. Một tên class đầy đủ phải theo dạng sau:
 
-  ```
-  \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
-  ```
-  a. Một tên class đầy đủ phải có tên namespace cấp cao nhất, cũng có thể hiểu như một **vendor namespace**.
-  b. abc
+      ```
+      \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
+      ```
+    1. Một tên class đầy đủ phải có tên namespace cấp cao nhất, cũng có thể hiểu như một **vendor namespace**.
+    2. abc
 3. Khi load một file mà nó tương ứng với tên class đầy đủ...
