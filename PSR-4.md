@@ -13,6 +13,6 @@ PSR này cũng mô tả nơi đặt những file mà có thể tự động load
   ```
   \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
   ```
-  1. Một tên class đầy đủ phải có tên namespace cấp cao nhất, cũng có thể hiểu như một **vendor namespace**.
-  2. abc
+  2. Một tên class đầy đủ phải có tên namespace cấp cao nhất, cũng có thể hiểu như một **vendor namespace**.
+  1. abc
 3. Khi load một file mà nó tương ứng với tên class đầy đủ...
