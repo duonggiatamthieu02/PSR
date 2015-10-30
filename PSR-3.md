@@ -16,21 +16,21 @@ Mục đích chính là cho phép thư viện nhận một đối tượng `Psr\
   * **info**: những sự việc đáng quan tâm: user đăng nhập, log của SQL.
   * **debug**: những thông tin debug.
 * Một phương thức thứ 9 - `log` - chấp nhận `log level` với đối số thứ đầu tiên.
-Gọi phương thức này với một hằng số `log level` phải tương ứng với một trong 8 level trên kia.
-Nếu một `log level` không được định nghĩa thì phải bung ra lỗi `Psr\Log\InvalidArgumentException` nếu không biết level nào cả.
+Gọi phương thức này với một hằng số `log level` PHẢI tương ứng với một trong 8 level trên kia.
+Nếu một `log level` không được định nghĩa thì PHẢI bung ra lỗi `Psr\Log\InvalidArgumentException` nếu không biết level nào cả.
 
 #### 1.2 Message
 * Mỗi phương thức chấp nhận một string ứng với message, hoặc object với phương thức `__toString()`.
-`Implementors` có thể có những xử lý đặc biệt cho những object. Trường hợp khác, `implementors` phải chuyển sang một string.
-* Message có thể chứa `placeholder` (giống [sprintf](http://php.net/manual/en/function.sprintf.php)) mà `implementors` phải thay thế bằng `value` từ mảng `context`.
+`Implementors` CÓ THỂ có những xử lý đặc biệt cho những object. Trường hợp khác, `implementors` phải chuyển sang một string.
+* Message CÓ THỂ chứa `placeholder` (giống [sprintf](http://php.net/manual/en/function.sprintf.php)) mà `implementors` CÓ THỂ thay thế bằng `value` từ mảng `context`.
 
-Tên của `placeholder` phải tương ứng với tên key trong mảng `context`.
+Tên của `placeholder` PHẢI tương ứng với tên key trong mảng `context`.
 
-Được phân cách bởi mở và đóng ngoặc nhọn, không có whitespace nào liền kề bên trong ngoặc nhọn.
+Nó PHẢI phân cách bởi mở và đóng ngoặc nhọn, KHÔNG PHẢI có whitespace nào liền kề bên trong ngoặc nhọn.
 
-Và phải chỉ dùng các ký tự `A-Z`, `a-z`, `0-9`, gạch chân `_`, và dấu chấm `.`.
+Và NÊN chỉ dùng các ký tự `A-Z`, `a-z`, `0-9`, gạch chân `_`, và dấu chấm `.`.
 
-`Implementors` có thể dùng `placeholders` để phiên dịch khi ghi log.
+`Implementors` CÓ THỂ dùng `placeholders` để phiên dịch khi ghi log.
 
 Sau đây là ví dụ của việc sử dụng `placeholder`:
 ```php
@@ -61,9 +61,9 @@ echo interpolate($message, $context);
 #### 1.3 Context
 * Mỗi phương thức chấp nhận một mảng `context`. Nó có nghĩa là giữ bất kỳ thông tin không liên quan nào trong một String.
 `value` trong `context` thì không bung ra `exception` và cũng không chứa bất kỳ `error`, `warning` hay `notice` của PHP.
-* Nếu một đối tượng `Exception` được truyền trong mảng `context` thì nó phải thuộc key `exception`.
+* Nếu một đối tượng `Exception` được truyền trong mảng `context` thì nó PHẢI thuộc key `exception`.
 Việc ghi log `exception` là một mẫu chuẩn và nó cho phép `implementors` đưa ra một `stack trace` của `exception` khi log của `backend` hỗ trợ nó.
-`Implementors` vẫn phải xác minh rằng key `exception` thì thực sự chứa một `Exception` trước khi sử dụng, vì nó có thể chứa bất kỳ thứ gì.
+`Implementors` vẫn PHẢI xác minh rằng key `exception` thì thực sự chứa một `Exception` trước khi sử dụng, vì nó có thể chứa bất kỳ thứ gì.
 
 #### 1.4 Helper classes and interfaces
 * Class `Psr\Log\AbstractLogger` cho phép bạn implement từ `LoggerInterface` một cách dễ dàng, bằng cách kế thừa nó và implement phương thức `log`.
