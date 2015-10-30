@@ -69,10 +69,10 @@ Code **phải** sử dụng thụt dòng 4 spaces, **không phải** là tab.
 Các hằng số PHP như `true`, `false`, `null` cũng **phải** viết thường.
 
 ### 3. Namespace and Use Declarations
-**phải** có một dòng trống phía sau khởi báo `namespace`.
+**Phải** có một dòng trống phía sau khởi báo `namespace`.
 Tất cả khởi báo `use` **phải** ở dưới `namespace`.
-**phải** chỉ có một từ khóa `use` ở một dòng khai báo.
-**phải** có một dòng trống phía sau vùng khai báo `use`.
+**Phải** chỉ có một từ khóa `use` ở một dòng khai báo.
+**Phải** có một dòng trống phía sau vùng khai báo `use`.
 
 Ví dụ:
 ```php
