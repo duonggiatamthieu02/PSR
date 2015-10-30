@@ -42,4 +42,4 @@ function autoload($className)
 }
 spl_autoload_register('autoload');
 ```
-### [SplClassLoader](https://github.com/runsystem-hiennt2/PSR/blob/master/SplClassLoader.php)
+### [SplClassLoader](https://gist.github.com/jwage/221634)
