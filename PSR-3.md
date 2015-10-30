@@ -7,14 +7,14 @@ Mục đích chính là cho phép thư viện nhận một đối tượng `Psr\
 ### 1. Specification
 #### 1.1 Basics
 * `LoggerInterface` trình bày 8 phương thức để ghi log, ứng với 8 level:
-  * emergency: hệ thống không thể sử dụng.
-  * alert: hành động phải giải quyết ngay lập tức: sập trang web, database không sẵn sàng. 
-  * critical: điều kiện quan trọng: thành phần của ứng dụng không sẵn sàng, lỗi bất ngờ.
-  * error: lỗi trong quá trình chạy, không đòi phải giải quyết ngay lập tức, nhưng nên ghi lại và theo dõi.
-  * warning: những exception xảy ra nhưng không phải lỗi: những cảnh báo về sử dụng
-  * notice: những việc bình thường nhưng có ý nghĩa.
-  * info: những sự việc đáng quan tâm: user đăng nhập, log của SQL.
-  * debug: những thông tin debug.
+  * **emergency**: hệ thống không thể sử dụng.
+  * **alert**: hành động phải giải quyết ngay lập tức: sập trang web, database không sẵn sàng. 
+  * **critical**: điều kiện quan trọng: thành phần của ứng dụng không sẵn sàng, lỗi bất ngờ.
+  * **error**: lỗi trong quá trình chạy, không đòi phải giải quyết ngay lập tức, nhưng nên ghi lại và theo dõi.
+  * **warning**: những exception xảy ra nhưng không phải lỗi: những cảnh báo về sử dụng
+  * **notice**: những việc bình thường nhưng có ý nghĩa.
+  * **info**: những sự việc đáng quan tâm: user đăng nhập, log của SQL.
+  * **debug**: những thông tin debug.
 * Một phương thức thứ 9 - `log` - chấp nhận `log level` với đối số thứ đầu tiên.
 Gọi phương thức này với một hằng số `log level` phải tương ứng với một trong 8 level trên kia.
 Nếu một `log level` không được định nghĩa thì phải bung ra lỗi `Psr\Log\InvalidArgumentException` nếu không biết level nào cả.
