@@ -9,6 +9,7 @@ PSR này cũng mô tả nơi đặt những file mà có thể tự động load
 ### 2. Specification
 1. Định nghĩa `class` đề cập đến các Class, Interface, Trait và các cấu trúc tương tự khác.
 2. Một tên class đầy đủ phải theo dạng sau:
+
   ```
   \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>
   ```
